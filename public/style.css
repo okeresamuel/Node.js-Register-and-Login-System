@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:wght@700&family=Pacifico&family=Patrick+Hand&family=Poppins:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Tangerine&display=swap');
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+#Register,#Login{
+    background-color: #2e2b2c;
+    color:white;
+    width:300px;
+    height: 70vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:10px;
+    background: rgba(255, 255, 255, 0.19);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(20.5px);
+   -webkit-backdrop-filter: blur(6.5px);
+}
+
+.logo{
+    position: absolute;
+    top:27%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    fill: #01c38e;
+}
+form{
+    display: grid;
+}
+.input,.input__btn,.dashboard__btn{
+    display: block;
+    padding:10px;
+    margin: auto;
+    margin:10px 0px 10px 0px;
+    border: none;
+    outline: none;
+    border-radius:3px;
+    background-color: #e9efef;
+    color:black;
+}
+.input__btn,.dashboard__btn{
+    padding: 6px;
+    width:max-content;
+    width:190px;
+    border: none;
+    background-color:#01c38e;
+    color:white;
+    padding:10px;
+    border-radius:4px;
+    cursor: pointer;
+    width:100%;
+}
+
+p{
+ text-align: left;
+}
+
+.login__link,.register__link,.forgot__link{
+    color: #01c38e;
+}
+

@@ -1,0 +1,22 @@
+<%- include("parcials/Header") %> 
+<body>
+<section id="Register__container">
+<%- include("flash") %> 
+
+<img class="logo" src="https://cdn.svgporn.com/logos/calibre-icon.svg" alt="logo">
+<h2>Sign up . . . </h2>
+<div id="Register">
+    <form action="/register" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="username" class="input" required placeholder="Name" id="name">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="input" required placeholder="Email" id="email">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="input" required placeholder="Password" id="password">
+        <button type="submit" class="input__btn">Register</button>
+        <p>Have an account?  <a href="/login" class="login__link">Login</a></p>
+    </form>
+</div>
+</section>
+</body>
+</html>

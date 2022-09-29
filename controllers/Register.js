@@ -10,7 +10,7 @@ export const PostRequest__Register = async (req,res) =>{
      const {email, username, password} = req.body;
      const newuser =  new User({email, username})
      const registereduser = await User.register(newuser, password)              
-     res.redirect("/")
+      await res.redirect("/")
     } catch (error) {
     req.flash("error", "A user with that username or email already exist")
     res.redirect("register")

@@ -14,7 +14,7 @@ let db = process.env.Mongodb__URL
 mongoose.connect(db) ? console.log("connected") : console.log("error connecting mongoose")
 
 app.set("view engine",  "ejs")
-app.use(express.static("public"))
+app.use(express.static('public'));
 app.set("views");
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
@@ -42,7 +42,7 @@ app.use((req,res, next)=>{
 
 app.use("/", (routes))
 app.use("*", (req, res)=>{
- res.status(404).send("i dont know that page")
+ res.status(404).render("404")
 })
 const port = process.env.PORT || 3000
 app.listen(port, console.log(`listening on port ${port}`))

@@ -10,5 +10,5 @@
 ![Project Image](./images/Screenshot%20(66).png "Title")
 
 ## View Project 
-![Link](https://nodejs-login-register1.herokuapp.com/login) 
+<a href="https://nodejs-login-register1.herokuapp.com/login" target="_blank"></a> 
 
